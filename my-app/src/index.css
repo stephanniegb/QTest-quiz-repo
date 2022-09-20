@@ -1,0 +1,21 @@
+:root{
+    --green: #4CA794;
+    --dark-green:#3E695F;
+    --light-green:#BAF5E8;
+    --off-white:#FFFCFF;
+    --very-light-green:#f4fcfa;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--off-white);
+    color: grey;
+}
+*, *::before,*::after{
+    box-sizing: inherit;
+}
+h1,h2,h3,h4,p{
+    margin: 0;
+    padding: 0;
+}
