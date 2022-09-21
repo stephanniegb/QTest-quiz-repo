@@ -12,3 +12,8 @@ i will have a parameter (eg data),then where i call the function..... i will pas
 in the fuction i will set my prop value to the parameter(ie data)
 then onevent (onsubmit), ill call the fuction (ie onFormSubmit) and pass the data (ie stored name)
 finally i go to quizcard destructure the prop { ie user} and use it!
+////////
+CSS JUSTIFY CONTENT
+you should always make rooom for the justify content to work
+eg by increasing height or removing width rules 
+just make sure there is room

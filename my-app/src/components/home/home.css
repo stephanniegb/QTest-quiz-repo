@@ -32,12 +32,16 @@
 .home__main h2{
     color: var(--dark-green);
     font-size: 2.5em;
-    padding: 1em;
-    /* padding-bottom: 1em; */
+    padding: 0.5em;
+}
+.home__mainpara{
+    color: var(--dark-green);
+    font-weight: bold;
+    margin-bottom: 1em;
 }
 .home__main p{
-    padding: 1em;
-    font-size: 1.2em;
+    line-height: 1.5;
+    padding-bottom: 0.5em;
 }
 .home__main input{
     border: 1px solid var(--dark-green);

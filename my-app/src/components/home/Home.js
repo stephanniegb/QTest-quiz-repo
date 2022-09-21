@@ -68,7 +68,16 @@ function Home({ setUser }) { // we destructure the setuser because it is an obje
       </header>
       {/* Body... */}
       <div className="home__main">
-        <h2>Welome {name}!</h2>
+        <h2>web dev 101 test</h2>
+        <div className="home__mainpara">
+        <p>
+          Topics: HTML CSS Javascript
+        </p>
+        <p>30 multiple choice questions</p>
+        </div>
+        
+        <h3>Before you start:</h3>
+        <p>*You can only select your answer once*</p>
         <p>Test your knowledge of HTML and CSS here now!</p>
         <form onSubmit={handleSubmit}>
           <input
