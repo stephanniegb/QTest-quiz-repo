@@ -5,7 +5,7 @@
 }
 .home__header{
     background-color: var(--dark-green);
-    padding: 1rem;
+    padding: 0.2rem;
     color: var(--light-green);
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,6 @@
     outline: none;
 }
 .home__button{
-    text-decoration: none;
     background-color: var(--dark-green);
     color: var(--light-green);
     border: none;

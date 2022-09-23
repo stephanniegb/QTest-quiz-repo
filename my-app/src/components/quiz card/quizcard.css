@@ -56,3 +56,35 @@
   background-color: var(--very-light-green);
   color: var(--grey);
 }
+.showScore{
+  height: 50vh;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: var(--very-light-green);
+  max-width: 50%;
+  border: 1px solid var(--dark-green);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.showScore:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.showScore h2{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 10%;
+}
+.resetBtn{
+  margin-inline: auto;
+  background-color: var(--dark-green);
+    color: var(--light-green);
+    border: none;
+    width: 15em;
+    border-radius: 15px;
+    padding: 1em;
+    margin-left: 60%;
+    font-weight: bold;
+    margin-top: 9em;
+
+}

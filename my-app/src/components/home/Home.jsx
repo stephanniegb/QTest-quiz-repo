@@ -1,4 +1,3 @@
-
 import "./home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -10,20 +9,33 @@ import {
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Home({ setUser }) { // we destructure the setuser because it is an object here
-  // fuction for the retriving the name
-  const onFormSubmit = (data) => {
-    setUser(data);
-  };
+const CustomDisplayIcon = ({ URL, icon, label }) => {
+  //destructure props
+  return (
+    <a href={URL} target="_blank" rel="noopener noreferrer" className="icon">
+      <FontAwesomeIcon icon={icon} className="brand__icon" />
+      <p>{label}</p>
+    </a>
+  );
+};
+
+function Home({ setUser }) {
+  //destructure props
   const navigate = useNavigate();
   //variable to store the name
   let storedName;
 
   const [name, setName] = useState("");
   const handleChange = (e) => {
-    setName(e.target.value);
+    const nameStr =
+      e.target.value.charAt(0).toUpperCase() +
+      e.target.value.slice(1).toLowerCase(); //to make the first letter uppercase
+    setName(nameStr);
   };
-
+  // fuction for the retriving the name
+  const onFormSubmit = (data) => {
+    setUser(data);
+  };
   // usenavigate on submit...
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -40,42 +52,28 @@ function Home({ setUser }) { // we destructure the setuser because it is an obje
           Q/<small>test</small>
         </span>
         <div className="home__headerIcon">
-          <a
-            href="https://www.linkedin.com/in/stephanie-egbuonu-809aa120a"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="headerIcon"
-          >
-            <FontAwesomeIcon icon={faLinkedin} className="brand__icon" />
-          </a>
-          <a
-            href="https://twitter.com/Stephanniegb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="headerIcon"
-          >
-            <FontAwesomeIcon icon={faTwitter} className="brand__icon" />
-          </a>
-          <a
-            href="https://github.com/stephanniegb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="headerIcon"
-          >
-            <FontAwesomeIcon icon={faGithub} className="brand__icon" />
-          </a>
+          <CustomDisplayIcon
+            URL={"https://www.linkedin.com/in/stephanie-egbuonu-809aa120a"}
+            icon={faLinkedin}
+          />
+          <CustomDisplayIcon
+            URL={"https://twitter.com/Stephanniegb"}
+            icon={faTwitter}
+          />
+          <CustomDisplayIcon
+            URL={"https://github.com/stephanniegb"}
+            icon={faGithub}
+          />
         </div>
       </header>
       {/* Body... */}
       <div className="home__main">
         <h2>web dev 101 test</h2>
         <div className="home__mainpara">
-        <p>
-          Topics: HTML CSS Javascript
-        </p>
-        <p>30 multiple choice questions</p>
+          <p>Topics: HTML CSS Javascript</p>
+          <p>30 multiple choice questions</p>
         </div>
-        
+
         <h3>Before you start:</h3>
         <p>*You can only select your answer once*</p>
         <p>Test your knowledge of HTML and CSS here now!</p>
@@ -100,42 +98,26 @@ function Home({ setUser }) { // we destructure the setuser because it is an obje
       <footer className="home__footer">
         <h2>Contact us</h2>
         <div className="home__icons">
-          <a
-            href="mailto:stephanieegbuonu@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon"
-          >
-            <FontAwesomeIcon icon={faEnvelope} className="brand__icon" />
-            <p>Mail</p>
-          </a>
-          <a
-            href="https://github.com/stephanniegb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon"
-          >
-            <FontAwesomeIcon icon={faGithub} className="brand__icon" />
-            <p>Github</p>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/stephanie-egbuonu-809aa120a"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon"
-          >
-            <FontAwesomeIcon icon={faLinkedin} className="brand__icon" />
-            <p>LinkedIn</p>
-          </a>
-          <a
-            href="https://twitter.com/Stephanniegb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon"
-          >
-            <FontAwesomeIcon icon={faTwitter} className="brand__icon" />
-            <p>Twitter</p>
-          </a>
+          <CustomDisplayIcon
+            URL={"mailto:stephanieegbuonu@gmail.com"}
+            icon={faEnvelope}
+            label={"Mail"}
+          />
+          <CustomDisplayIcon
+            URL={"https://github.com/stephanniegb"}
+            icon={faGithub}
+            label={"Github"}
+          />
+          <CustomDisplayIcon
+            URL={"https://www.linkedin.com/in/stephanie-egbuonu-809aa120a"}
+            icon={faLinkedin}
+            label={"LinkedIn"}
+          />
+          <CustomDisplayIcon
+            URL={"https://twitter.com/Stephanniegb"}
+            icon={faTwitter}
+            label={"Twitter"}
+          />
         </div>
       </footer>
     </div>
