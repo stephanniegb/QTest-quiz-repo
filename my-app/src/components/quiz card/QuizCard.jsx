@@ -1,19 +1,23 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import QuestionsData from "../../Questions.json";
 import "./quizcard.css";
 function QuizCard({ user }) {
+  let randomNumber = QuestionsData.length
+  console.log(randomNumber);
   const [currentQt, setCurrentQt] = useState(0);
   const [questions, setQuestions] = useState(
     QuestionsData.slice(currentQt, currentQt + 1)
   );
+  const [qtNumber, setQtNumber] = useState(1)
+
   const handleAnswerClick = () => {
     setCurrentQt((prev) => prev + 1);
-    setQuestions(QuestionsData.slice(currentQt, currentQt + 1));
-    setQtNumber(qtNumber + 1)
-  console.log(currentQt); //the bug is that my initial state is not changing immediately
-
+    setQtNumber(qtNumber + 1) //the bug is that my initial state is not changing immediately
   };
-  const [qtNumber, setQtNumber] = useState(1)
+  useEffect(() =>{
+    setQuestions(QuestionsData.slice(currentQt, currentQt + 1));
+  },[currentQt])
   return (
     <div className="wrapper">
       <div className="quizcard">

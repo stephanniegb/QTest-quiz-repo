@@ -5,8 +5,10 @@
   height: 100vh;
 }
 .quizcard {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 50%;
+  height: 50vh;
   gap: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -14,7 +16,7 @@
   max-width: 50%;
   border: 1px solid var(--dark-green);
   border-radius: 10px;
-  padding: 2rem
+  padding: 2rem;
 
 }
 .quizcard:hover {
@@ -32,10 +34,12 @@
 }
 .quizcard__qut {
   text-align: center;
+  border: 0chq;
 }
 .quizcard__ansDiv {
+  width: 90%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 .ansBtn {
@@ -43,8 +47,10 @@
   color: var(--light-green);
   border: 1px solid var(--dark-green);
   border-radius: 15px;
-  padding: 1em;
+  /* width: 100px; */
+  padding: 0.5em;
   font-weight: bold;
+  transition: background-color 0.2s;
 }
 .ansBtn:hover {
   background-color: var(--very-light-green);

@@ -17,3 +17,6 @@ CSS JUSTIFY CONTENT
 you should always make rooom for the justify content to work
 eg by increasing height or removing width rules 
 just make sure there is room
+/////////////////////////////
+ABOUT THE BUG I HAD WITH THE QUESTIONS
+I used a useEffect to for the set question because i want that function to run afterrrr the currentQt has been updated
