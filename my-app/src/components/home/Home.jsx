@@ -48,8 +48,8 @@ function Home({ setUser }) {
     <div className="home__container">
       {/* HEADER... */}
       <header className="home__header">
-        <span>
-          Q/<small>test</small>
+        <span className="logo">
+          Quiz/<small>me</small>
         </span>
         <div className="home__headerIcon">
           <CustomDisplayIcon

@@ -1,16 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&family=Rubik:wght@300&display=swap');
 :root{
     --green: #4CA794;
     --dark-green:#3E695F;
     --light-green:#BAF5E8;
     --off-white:#FFFCFF;
     --very-light-green:#f4fcfa;
+    --Courgette:'Courgette', cursive;
+    --Rubik:'Rubik', sans-serif;
+    --Pacifico:'Pacifico', cursive;
 }
+
+
+/* :root{
+    --green: #3E695F;
+    --dark-green:#3E695F;
+    --light-green:#BAF5E8;
+    --off-white:black;
+    --very-light-green:#3E695F;
+    --Courgette:'Courgette', cursive;
+    --Rubik:'Rubik', sans-serif;
+    --Pacifico:'Pacifico', cursive;
+} */
+
+/* :root{
+    --green: #401935;
+    --dark-green:#0D0C0A;
+    --light-green:#FEFEE4;
+    --off-white:#F2F2F2;
+    --very-light-green:#F2F2F2;
+    --Courgette:'Courgette', cursive;
+    --Rubik:'Rubik', sans-serif;
+    --Pacifico:'Pacifico', cursive;
+} */
+/* :root{
+    --green: #401935;
+    --dark-green:#121214;
+    --light-green:#ffffff;
+    --off-white:#FFFFFF;
+    --very-light-green:#F2F2F2;
+    --Courgette:'Courgette', cursive;
+    --Rubik:'Rubik', sans-serif;
+    --Pacifico:'Pacifico', cursive;
+} */
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: var(--off-white);
-    color: grey;
+    color: #808181;
+    font-family: var(--Rubik);
 }
 *, *::before,*::after{
     box-sizing: inherit;
@@ -18,4 +56,8 @@ body{
 h1,h2,h3,h4,p{
     margin: 0;
     padding: 0;
+}
+input button{
+    font-family: var(--Rubik);
+
 }

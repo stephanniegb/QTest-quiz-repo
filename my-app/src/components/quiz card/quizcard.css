@@ -65,6 +65,10 @@
   border-radius: 10px;
   padding: 2rem;
 }
+.congrats{
+  color: var(--dark-green);
+  font-family: var(--Pacifico);
+}
 .showScore:hover{
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -113,7 +117,7 @@
     flex-direction: column;
     height: 50vh; 
     width: 80%;
-    gap: 8em;
+    gap: 7em;
      padding: 1rem;
   }
   .showScore h2{
@@ -150,7 +154,7 @@
     flex-direction: column;
     height: 50vh; 
     width: 80%;
-    gap: 5em;
+    gap: 2em;
      padding: 1rem;
   }
   .showScore h2{
