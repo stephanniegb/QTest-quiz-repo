@@ -13,7 +13,6 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: var(--very-light-green);
-  max-width: 50%;
   border: 1px solid var(--dark-green);
   border-radius: 10px;
   padding: 2rem;
@@ -62,7 +61,6 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: var(--very-light-green);
-  max-width: 50%;
   border: 1px solid var(--dark-green);
   border-radius: 10px;
   padding: 2rem;
@@ -76,15 +74,91 @@
   margin-top: 10%;
 }
 .resetBtn{
-  margin-inline: auto;
   background-color: var(--dark-green);
     color: var(--light-green);
     border: none;
     width: 15em;
     border-radius: 15px;
     padding: 1em;
-    margin-left: 60%;
+    margin-left: 50%;
     font-weight: bold;
-    margin-top: 9em;
+    margin-top: 10%;
+
+}
+/* Media query... */
+@media only screen and (max-width:30.00rem){
+  .quizcard{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 80%;
+    gap: 3rem;
+    padding: 1rem;
+  }
+  .ansBtn{
+    width: 70%;
+    padding: 0.8rem;
+    font-size: 0.7em;
+    margin-left: 15%;
+  }
+  .quizcard__ansDiv{
+    width: 100%;
+    display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  }
+  .showScore{
+    display: flex;
+    flex-direction: column;
+    height: 50vh; 
+    width: 80%;
+    gap: 8em;
+     padding: 1rem;
+  }
+  .showScore h2{
+    font-size: 1.3em;
+  }
+  .resetBtn{
+    margin-left: 6%;
+  }
+}
+@media only screen and (min-width:30.02rem) and (max-width:60rem){
+  .quizcard{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    width: 80%;
+    gap: 3rem;
+    padding: 1rem;
+  }
+  .ansBtn{
+    width: 70%;
+    padding: 0.8rem;
+    font-size: 0.7em;
+    margin-left: 15%;
+  }
+  .quizcard__ansDiv{
+    width: 100%;
+    display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  }
+  .showScore{
+    display: flex;
+    flex-direction: column;
+    height: 50vh; 
+    width: 80%;
+    gap: 5em;
+     padding: 1rem;
+  }
+  .showScore h2{
+    font-size: 1.3em;
+  }
+  .resetBtn{
+    margin-left: 6%;
+  }
+  
 
 }

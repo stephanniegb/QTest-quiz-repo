@@ -68,15 +68,15 @@ function Home({ setUser }) {
       </header>
       {/* Body... */}
       <div className="home__main">
-        <h2>web dev 101 test</h2>
+        <h2>Quiz Me</h2>
         <div className="home__mainpara">
-          <p>Topics: HTML CSS Javascript</p>
-          <p>30 multiple choice questions</p>
+          <p>Topic: Javascript</p>
+          <p>Multiple choice questions</p>
         </div>
 
         <h3>Before you start:</h3>
         <p>*You can only select your answer once*</p>
-        <p>Test your knowledge of HTML and CSS here now!</p>
+        <p>Test your knowledge of javascript here now!</p>
         <form onSubmit={handleSubmit}>
           <input
             type="text"

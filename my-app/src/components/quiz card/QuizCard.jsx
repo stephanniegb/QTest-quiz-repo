@@ -8,7 +8,7 @@ function QuizCard({ user }) {
   const [questions, setQuestions] = useState(QuestionsData.slice(currentQt, currentQt + 1));
   const [showScore, setShowScore]=useState(false)
   const[score, setScore] = useState(0)
-  
+
   const handleAnswerClick = (isCorrect) => {
     if (isCorrect === true) {
       setScore(score + 1)

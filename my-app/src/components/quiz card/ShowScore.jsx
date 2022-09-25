@@ -10,7 +10,7 @@ function ShowScore({total, user, score}) {
   
   return (
     <div className="showScore">
-        <h2>{user} you scored {score} out of {total}</h2>
+        <h2>{user}, you scored {score} out of {total}</h2>
         <button className="resetBtn" onClick={handleReset}>Reset</button>
     </div>
   )

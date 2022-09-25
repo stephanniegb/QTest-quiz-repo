@@ -1,4 +1,5 @@
 .home__container{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 8rem;
@@ -92,4 +93,20 @@
 }
 .brand__icon{
     font-size: 1.5rem;
+}
+@media only screen and (max-width:30.00rem){
+    .home__container{
+        gap: 8.7rem;
+    }
+    .home__main{
+        width: 90%;
+    }
+    .home__main input{
+        width: 80%;
+    }
+}
+@media only screen and (min-width:30.02rem) and (max-width:60rem){
+    .home__main{
+        width: 70%;
+    }
 }

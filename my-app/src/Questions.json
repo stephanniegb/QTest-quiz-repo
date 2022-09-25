@@ -1,23 +1,191 @@
 [
-    {"QuestionText":"what does  CSS stand for?","answerOptions":[
-    {"answertext":"Cascading Style Sheet","isCorrect":true},
-    {"answertext":"bad","isCorrect":false},
-    {"answertext":"hjwqjk","isCorrect":false},
-    {"answertext":"kc","isCorrect":false}]},
-    {"QuestionText":"what does HTML stand for?","answerOptions":[
-    {"answertext":"emma","isCorrect":false},
-    {"answertext":"goat","isCorrect":false},
-    {"answertext":"Hyper Text MarkUp Language","isCorrect":true},
-    {"answertext":"cat","isCorrect":false}]},
-    {"QuestionText":"who is you?","answerOptions":[
-    {"answertext":"lozo","isCorrect":false},
-    {"answertext":"zobo","isCorrect":true},
-    {"answertext":"carry","isCorrect":false},
-    {"answertext":"ike","isCorrect":false}]},
-    {"QuestionText":"im okay are you?","answerOptions":[
-    {"answertext":"my leg","isCorrect":false},
-    {"answertext":"why now","isCorrect":false},
-    {"answertext":"work","isCorrect":false},
-    {"answertext":"outtt","isCorrect":true}]}
-    
+  {
+    "QuestionText": "Which of these is not a primitive data type in javascript?",
+    "answerOptions": [
+      { "answertext": "Array", "isCorrect": true },
+      { "answertext": "String", "isCorrect": false },
+      { "answertext": "Number", "isCorrect": false },
+      { "answertext": "Boolean", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "What is a javascript method?",
+    "answerOptions": [
+      {
+        "answertext": "It is a way to do things in javascript",
+        "isCorrect": false
+      },
+      {
+        "answertext": "It is the way to call a fuction in javascript",
+        "isCorrect": false
+      },
+      {
+        "answertext": "It is a property of an object that contains a fuction definition",
+        "isCorrect": true
+      },
+      { "answertext": "None of the above", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "What keyword should be used to declear a variable that should not change throught the program?",
+    "answerOptions": [
+      { "answertext": "Let", "isCorrect": false },
+      { "answertext": "Const", "isCorrect": true },
+      { "answertext": "Var", "isCorrect": false },
+      { "answertext": "Constant", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "Which of these is a built in javascript array method?",
+    "answerOptions": [
+      { "answertext": "cut()", "isCorrect": false },
+      { "answertext": "copy()", "isCorrect": false },
+      { "answertext": "shuffle() ", "isCorrect": false },
+      { "answertext": "splice()", "isCorrect": true }
+    ]
+  },
+  {
+    "QuestionText": "Which of these methods checks if an array contains a specified element?",
+    "answerOptions": [
+      { "answertext": "keys()", "isCorrect": false },
+      { "answertext": "has()", "isCorrect": false },
+      { "answertext": "includes()", "isCorrect": true },
+      { "answertext": "some()", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "What keyword is used to create a function in javascript?",
+    "answerOptions": [
+      { "answertext": "create", "isCorrect": false },
+      { "answertext": "function", "isCorrect": true },
+      { "answertext": "func", "isCorrect": false },
+      { "answertext": "createfun", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "Javascript allows developer create ___?",
+    "answerOptions": [
+      { "answertext": "Colorful web pages", "isCorrect": false },
+      { "answertext": "Beautiful layout", "isCorrect": false },
+      { "answertext": "Static web pages", "isCorrect": false },
+      { "answertext": "Dynamic and interactive web pages", "isCorrect": true }
+    ]
+  },
+  {
+    "QuestionText": "Javascript was invented by?",
+    "answerOptions": [
+      { "answertext": "Bill Gates", "isCorrect": false },
+      { "answertext": "Brendan Eich", "isCorrect": true },
+      { "answertext": "Guido van Rossum", "isCorrect": false },
+      { "answertext": "James Gosling", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "Which of these is not a valid javascript operator?",
+    "answerOptions": [
+      { "answertext": "+", "isCorrect": false },
+      { "answertext": "%", "isCorrect": false },
+      { "answertext": "===", "isCorrect": false },
+      { "answertext": "()", "isCorrect": true }
+    ]
+  },
+  {
+    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "answerOptions": [
+      { "answertext": "(? :)", "isCorrect": true },
+      { "answertext": "( <= >=)", "isCorrect": false },
+      { "answertext": "(| &&)", "isCorrect": false },
+      { "answertext": "(=> ?)", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "what is loop used for in javascript ?",
+    "answerOptions": [
+      { "answertext": "To  execute the same code repeatedly", "isCorrect": true },
+      { "answertext": "To  execute a code only once", "isCorrect": false },
+      { "answertext": "(| &&)", "isCorrect": false },
+      { "answertext": "(=> ?)", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "which of these is not a type of loop in javascript?",
+    "answerOptions": [
+      { "answertext": "for loop", "isCorrect": false },
+      { "answertext": "for if loop", "isCorrect": true },
+      { "answertext": "do...While loop", "isCorrect": false },
+      { "answertext": "while loop", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": " conditional statements in javascript are used to decide the flow of execution based on different conditions?",
+    "answerOptions": [
+      { "answertext": "False", "isCorrect": false },
+      { "answertext": "True and False" , "isCorrect": false },
+      { "answertext": "True", "isCorrect": true },
+      { "answertext": "None of the above", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "answerOptions": [
+      { "answertext": "(? :)", "isCorrect": true },
+      { "answertext": "( <= >=)", "isCorrect": false },
+      { "answertext": "(| &&)", "isCorrect": false },
+      { "answertext": "(=> ?)", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "answerOptions": [
+      { "answertext": "(? :)", "isCorrect": true },
+      { "answertext": "( <= >=)", "isCorrect": false },
+      { "answertext": "(| &&)", "isCorrect": false },
+      { "answertext": "(=> ?)", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "answerOptions": [
+      { "answertext": "(? :)", "isCorrect": true },
+      { "answertext": "( <= >=)", "isCorrect": false },
+      { "answertext": "(| &&)", "isCorrect": false },
+      { "answertext": "(=> ?)", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "answerOptions": [
+      { "answertext": "(? :)", "isCorrect": true },
+      { "answertext": "( <= >=)", "isCorrect": false },
+      { "answertext": "(| &&)", "isCorrect": false },
+      { "answertext": "(=> ?)", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "answerOptions": [
+      { "answertext": "(? :)", "isCorrect": true },
+      { "answertext": "( <= >=)", "isCorrect": false },
+      { "answertext": "(| &&)", "isCorrect": false },
+      { "answertext": "(=> ?)", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "answerOptions": [
+      { "answertext": "(? :)", "isCorrect": true },
+      { "answertext": "( <= >=)", "isCorrect": false },
+      { "answertext": "(| &&)", "isCorrect": false },
+      { "answertext": "(=> ?)", "isCorrect": false }
+    ]
+  },
+  {
+    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "answerOptions": [
+      { "answertext": "(? :)", "isCorrect": true },
+      { "answertext": "( <= >=)", "isCorrect": false },
+      { "answertext": "(| &&)", "isCorrect": false },
+      { "answertext": "(=> ?)", "isCorrect": false }
+    ]
+  }
 ]
