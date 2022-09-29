@@ -18,11 +18,18 @@ function QuizCard({ user }) {
     } else {
       setShowScore(true)
     }
-    
   };
   useEffect(() => {
     setQuestions(QuestionsData.slice(currentQt, currentQt + 1));
   }, [currentQt]);
+  // custom for the answer options
+  const CustomButton = ({index,param}) =>{
+    return(
+      <button onClick={() => handleAnswerClick(param.answerOptions[index].isCorrect)} className="ansBtn">
+          {param.answerOptions[index].answertext}
+      </button>
+    )
+  }
 
   return (
     <div className="wrapper">
@@ -41,18 +48,10 @@ function QuizCard({ user }) {
         {questions.map((ans) => {
           return (
             <div className="quizcard__ansDiv">
-              <button onClick={() => handleAnswerClick(ans.answerOptions[0].isCorrect)} className="ansBtn">
-                {ans.answerOptions[0].answertext}
-              </button>
-              <button onClick={() => handleAnswerClick(ans.answerOptions[1].isCorrect)} className="ansBtn">
-                {ans.answerOptions[1].answertext}
-              </button>
-              <button onClick={() => handleAnswerClick(ans.answerOptions[2].isCorrect)} className="ansBtn">
-                {ans.answerOptions[2].answertext}
-              </button>
-              <button onClick={() => handleAnswerClick(ans.answerOptions[3].isCorrect)} className="ansBtn">
-                {ans.answerOptions[3].answertext}
-              </button>
+              <CustomButton index={0} param={ans}/>
+              <CustomButton index={1} param={ans}/>
+              <CustomButton index={2} param={ans}/>
+              <CustomButton index={3} param={ans}/>
             </div>
           );
         })}
@@ -60,5 +59,4 @@ function QuizCard({ user }) {
     </div>
   );
 }
-
 export default QuizCard;

@@ -63,12 +63,12 @@
     ]
   },
   {
-    "QuestionText": "Javascript allows developer create ___?",
+    "QuestionText": "Variables that are available throught the length of the code and has no scope in javascript are called?",
     "answerOptions": [
-      { "answertext": "Colorful web pages", "isCorrect": false },
-      { "answertext": "Beautiful layout", "isCorrect": false },
-      { "answertext": "Static web pages", "isCorrect": false },
-      { "answertext": "Dynamic and interactive web pages", "isCorrect": true }
+      { "answertext": "General variables", "isCorrect": false },
+      { "answertext": "Scopeless variables", "isCorrect": false },
+      { "answertext": "Public variables", "isCorrect": false },
+      { "answertext": "Global variables", "isCorrect": true }
     ]
   },
   {
@@ -99,12 +99,12 @@
     ]
   },
   {
-    "QuestionText": "what is loop used for in javascript ?",
+    "QuestionText": "the assignment operator in javascript is?",
     "answerOptions": [
-      { "answertext": "To  execute the same code repeatedly", "isCorrect": true },
-      { "answertext": "To  execute a code only once", "isCorrect": false },
-      { "answertext": "(| &&)", "isCorrect": false },
-      { "answertext": "(=> ?)", "isCorrect": false }
+      { "answertext": "==", "isCorrect": false },
+      { "answertext": "as", "isCorrect": false },
+      { "answertext": "=", "isCorrect": true },
+      { "answertext": "=>", "isCorrect": false }
     ]
   },
   {
@@ -126,66 +126,66 @@
     ]
   },
   {
-    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "QuestionText": "what is the expected result of console.log(-true + 45)?",
     "answerOptions": [
-      { "answertext": "(? :)", "isCorrect": true },
-      { "answertext": "( <= >=)", "isCorrect": false },
-      { "answertext": "(| &&)", "isCorrect": false },
-      { "answertext": "(=> ?)", "isCorrect": false }
+      { "answertext": "NaN", "isCorrect": false },
+      { "answertext": "44", "isCorrect": true },
+      { "answertext": "'true45'", "isCorrect": false },
+      { "answertext": "46", "isCorrect": false }
     ]
   },
   {
-    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "QuestionText": "The current context of execution,which determines the accessiblity of variables in javascript?",
     "answerOptions": [
-      { "answertext": "(? :)", "isCorrect": true },
-      { "answertext": "( <= >=)", "isCorrect": false },
-      { "answertext": "(| &&)", "isCorrect": false },
-      { "answertext": "(=> ?)", "isCorrect": false }
+      { "answertext": "Area", "isCorrect": false },
+      { "answertext": "Range", "isCorrect": false },
+      { "answertext": "Block", "isCorrect": false },
+      { "answertext": "Scope", "isCorrect": true }
     ]
   },
   {
-    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "QuestionText": "Array in javascript are zero based, this means?",
     "answerOptions": [
-      { "answertext": "(? :)", "isCorrect": true },
-      { "answertext": "( <= >=)", "isCorrect": false },
-      { "answertext": "(| &&)", "isCorrect": false },
-      { "answertext": "(=> ?)", "isCorrect": false }
+      { "answertext": "All javaScript arrays must begin with zero", "isCorrect": false },
+      { "answertext": "Every item in the array must be in base zero", "isCorrect": false },
+      { "answertext": "JavaScript start counting fom zero when it indexs an array", "isCorrect": true },
+      { "answertext": "None of the above", "isCorrect": false }
     ]
   },
   {
-    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "QuestionText": "console.log(+'')what is the expected output?",
     "answerOptions": [
-      { "answertext": "(? :)", "isCorrect": true },
-      { "answertext": "( <= >=)", "isCorrect": false },
-      { "answertext": "(| &&)", "isCorrect": false },
-      { "answertext": "(=> ?)", "isCorrect": false }
+      { "answertext": "<empty string>", "isCorrect": false },
+      { "answertext": "0", "isCorrect": true},
+      { "answertext": "' '", "isCorrect": false },
+      { "answertext": "NaN", "isCorrect": false }
     ]
   },
   {
-    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "QuestionText": "which of these is a primitive datatype in javascript?",
     "answerOptions": [
-      { "answertext": "(? :)", "isCorrect": true },
-      { "answertext": "( <= >=)", "isCorrect": false },
-      { "answertext": "(| &&)", "isCorrect": false },
-      { "answertext": "(=> ?)", "isCorrect": false }
+      { "answertext": "BigInts", "isCorrect": true },
+      { "answertext": "Object", "isCorrect": false },
+      { "answertext": "Array", "isCorrect": false },
+      { "answertext": "Method", "isCorrect": false }
     ]
   },
   {
-    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "QuestionText": "let count = 1, let result = count++. what is the value of result?",
     "answerOptions": [
-      { "answertext": "(? :)", "isCorrect": true },
-      { "answertext": "( <= >=)", "isCorrect": false },
-      { "answertext": "(| &&)", "isCorrect": false },
-      { "answertext": "(=> ?)", "isCorrect": false }
+      { "answertext": "2", "isCorrect": true },
+      { "answertext": "1", "isCorrect": false },
+      { "answertext": "undefined", "isCorrect": false },
+      { "answertext": "1.0", "isCorrect": false }
     ]
   },
   {
-    "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
+    "QuestionText": "JavaScript is synchronous means that?",
     "answerOptions": [
-      { "answertext": "(? :)", "isCorrect": true },
-      { "answertext": "( <= >=)", "isCorrect": false },
-      { "answertext": "(| &&)", "isCorrect": false },
-      { "answertext": "(=> ?)", "isCorrect": false }
+      { "answertext": "operations can run in parallel", "isCorrect": false },
+      { "answertext": "a specified number of operation can run at a time", "isCorrect": false },
+      { "answertext": "only one operation can be in progress at a time", "isCorrect": true },
+      { "answertext": "higher order functions takes priorty and runs before every other program", "isCorrect": false }
     ]
   }
 ]
