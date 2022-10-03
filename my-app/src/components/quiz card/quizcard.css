@@ -42,11 +42,12 @@
   gap: 1rem;
 }
 .ansBtn {
+  display: inline-block;
+  width: 90%;
   background-color: var(--dark-green);
   color: var(--light-green);
   border: 1px solid var(--dark-green);
   border-radius: 15px;
-  /* width: 100px; */
   padding: 0.5em;
   font-weight: bold;
   transition: background-color 0.2s;
@@ -54,6 +55,16 @@
 .ansBtn:hover {
   background-color: var(--very-light-green);
   color: var(--grey);
+}
+.selected{
+  display: inline-block;
+  width: 90%;
+  background-color: red;
+  color: var(--light-green);
+  border: 1px solid var(--dark-green);
+  border-radius: 15px;
+  padding: 0.5em;
+  font-weight: bold;
 }
 .showScore{
   height: 50vh;

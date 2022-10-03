@@ -7,25 +7,42 @@ function QuizCard({ user }) {
   const [currentQt, setCurrentQt] = useState(0);
   const [questions, setQuestions] = useState(QuestionsData.slice(currentQt, currentQt + 1));
   const [showScore, setShowScore]=useState(false)
+  const[chosen, setChosen] = useState({
+    chosenOption:'',
+    selected: null
+})
   const[score, setScore] = useState(0)
 
-  const handleAnswerClick = (isCorrect) => {
-    if (isCorrect === true) {
-      setScore(score + 1)
+  const handleAnswerClick = (option, index) => {
+    setChosen({
+      chosenOption:option,
+      selected: index
+    })
+    console.log(option);
+    console.log(chosen.selected);
+  };
+  
+  const handleNext = (isCorrect) =>{
+    if(chosen.chosenOption === isCorrect){
+    setScore(score + 1)
     }
     if (currentQt + 1 < QuestionsData.length) {
       setCurrentQt((prev) => prev + 1);
     } else {
       setShowScore(true)
     }
-  };
+  }
   useEffect(() => {
     setQuestions(QuestionsData.slice(currentQt, currentQt + 1));
+    setChosen({
+      selected:null
+    })
   }, [currentQt]);
+
   // custom for the answer options
-  const CustomButton = ({index,param}) =>{
+  const CustomButton = ({index,option,param}) =>{
     return(
-      <button onClick={() => handleAnswerClick(param.answerOptions[index].isCorrect)} className="ansBtn">
+      <button onClick={() => handleAnswerClick(option,index)} className={index === chosen.selected ? 'selected' : 'ansBtn' }>
           {param.answerOptions[index].answertext}
       </button>
     )
@@ -48,10 +65,11 @@ function QuizCard({ user }) {
         {questions.map((ans) => {
           return (
             <div className="quizcard__ansDiv">
-              <CustomButton index={0} param={ans}/>
-              <CustomButton index={1} param={ans}/>
-              <CustomButton index={2} param={ans}/>
-              <CustomButton index={3} param={ans}/>
+              <CustomButton index={0} option={'A'} param={ans}/>
+              <CustomButton index={1} option={'B'} param={ans}/>
+              <CustomButton index={2} option={'C'} param={ans}/>
+              <CustomButton index={3} option={'D'} param={ans}/>
+              <button onClick={()=>{handleNext(ans.isCorrect)}}>Next</button>
             </div>
           );
         })}

@@ -11,42 +11,13 @@
 }
 
 
-/* :root{
-    --green: #3E695F;
-    --dark-green:#3E695F;
-    --light-green:#BAF5E8;
-    --off-white:black;
-    --very-light-green:#3E695F;
-    --Courgette:'Courgette', cursive;
-    --Rubik:'Rubik', sans-serif;
-    --Pacifico:'Pacifico', cursive;
-} */
 
-/* :root{
-    --green: #401935;
-    --dark-green:#0D0C0A;
-    --light-green:#FEFEE4;
-    --off-white:#F2F2F2;
-    --very-light-green:#F2F2F2;
-    --Courgette:'Courgette', cursive;
-    --Rubik:'Rubik', sans-serif;
-    --Pacifico:'Pacifico', cursive;
-} */
-/* :root{
-    --green: #401935;
-    --dark-green:#121214;
-    --light-green:#ffffff;
-    --off-white:#FFFFFF;
-    --very-light-green:#F2F2F2;
-    --Courgette:'Courgette', cursive;
-    --Rubik:'Rubik', sans-serif;
-    --Pacifico:'Pacifico', cursive;
-} */
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: var(--off-white);
+    background-image: url(../public/learning-4264032_1920.jpg);
     color: #808181;
     font-family: var(--Rubik);
 }
