@@ -2,190 +2,207 @@
   {
     "QuestionText": "Which of these is not a primitive data type in javascript?",
     "answerOptions": [
-      { "answertext": "Array", "isCorrect": true },
-      { "answertext": "String", "isCorrect": false },
-      { "answertext": "Number", "isCorrect": false },
-      { "answertext": "Boolean", "isCorrect": false }
-    ]
+      { "answertext": "Array"},
+      { "answertext": "String" },
+      { "answertext": "Number"},
+      { "answertext": "Boolean" }
+    ],
+    "isCorrect": "A"
   },
   {
     "QuestionText": "What is a javascript method?",
     "answerOptions": [
       {
-        "answertext": "It is a way to do things in javascript",
-        "isCorrect": false
+        "answertext": "It is a way to do things in javascript"
       },
       {
-        "answertext": "It is the way to call a fuction in javascript",
-        "isCorrect": false
+        "answertext": "It is the way to call a fuction in javascript"
       },
       {
-        "answertext": "It is a property of an object that contains a fuction definition",
-        "isCorrect": true
+        "answertext": "It is a property of an object that contains a fuction definition"
       },
-      { "answertext": "None of the above", "isCorrect": false }
-    ]
+      { "answertext": "None of the above"}
+    ],
+    "isCorrect": "C"
   },
   {
     "QuestionText": "What keyword should be used to declear a variable that should not change throught the program?",
     "answerOptions": [
-      { "answertext": "Let", "isCorrect": false },
-      { "answertext": "Const", "isCorrect": true },
-      { "answertext": "Var", "isCorrect": false },
-      { "answertext": "Constant", "isCorrect": false }
-    ]
+      { "answertext": "Let"},
+      { "answertext": "Const"},
+      { "answertext": "Var"},
+      { "answertext": "Constant"}
+    ],
+    "isCorrect": "B"
   },
   {
     "QuestionText": "Which of these is a built in javascript array method?",
     "answerOptions": [
-      { "answertext": "cut()", "isCorrect": false },
-      { "answertext": "copy()", "isCorrect": false },
-      { "answertext": "shuffle() ", "isCorrect": false },
-      { "answertext": "splice()", "isCorrect": true }
-    ]
+      { "answertext": "cut()" },
+      { "answertext": "copy()"},
+      { "answertext": "shuffle()"},
+      { "answertext": "splice()"}
+    ],
+    "isCorrect": "D"
   },
   {
     "QuestionText": "Which of these methods checks if an array contains a specified element?",
     "answerOptions": [
-      { "answertext": "keys()", "isCorrect": false },
-      { "answertext": "has()", "isCorrect": false },
-      { "answertext": "includes()", "isCorrect": true },
-      { "answertext": "some()", "isCorrect": false }
-    ]
+      { "answertext": "keys()"},
+      { "answertext": "has()" },
+      { "answertext": "includes()"},
+      { "answertext": "some()" }
+    ],
+    "isCorrect": "C"
   },
   {
     "QuestionText": "What keyword is used to create a function in javascript?",
     "answerOptions": [
-      { "answertext": "create", "isCorrect": false },
-      { "answertext": "function", "isCorrect": true },
-      { "answertext": "func", "isCorrect": false },
-      { "answertext": "createfun", "isCorrect": false }
-    ]
+      { "answertext": "create"},
+      { "answertext": "function"},
+      { "answertext": "func"},
+      { "answertext": "createfun"}
+    ],
+    "isCorrect": "B"
   },
   {
     "QuestionText": "Variables that are available throught the length of the code and has no scope in javascript are called?",
     "answerOptions": [
-      { "answertext": "General variables", "isCorrect": false },
-      { "answertext": "Scopeless variables", "isCorrect": false },
-      { "answertext": "Public variables", "isCorrect": false },
-      { "answertext": "Global variables", "isCorrect": true }
-    ]
+      { "answertext": "General variables"},
+      { "answertext": "Scopeless variables"},
+      { "answertext": "Public variables"},
+      { "answertext": "Global variables"}
+    ],
+    "isCorrect": "D"
   },
   {
     "QuestionText": "Javascript was invented by?",
     "answerOptions": [
-      { "answertext": "Bill Gates", "isCorrect": false },
-      { "answertext": "Brendan Eich", "isCorrect": true },
-      { "answertext": "Guido van Rossum", "isCorrect": false },
-      { "answertext": "James Gosling", "isCorrect": false }
-    ]
+      { "answertext": "Bill Gates"},
+      { "answertext": "Brendan Eich" },
+      { "answertext": "Guido van Rossum" },
+      { "answertext": "James Gosling" }
+    ],
+    "isCorrect": "B"
   },
   {
     "QuestionText": "Which of these is not a valid javascript operator?",
     "answerOptions": [
-      { "answertext": "+", "isCorrect": false },
-      { "answertext": "%", "isCorrect": false },
-      { "answertext": "===", "isCorrect": false },
-      { "answertext": "()", "isCorrect": true }
-    ]
+      { "answertext": "+"},
+      { "answertext": "%"},
+      { "answertext": "==="},
+      { "answertext": "()" }
+    ],
+    "isCorrect": "D"
   },
   {
     "QuestionText": "which of these is a ternary(conditional) operator in javascript?",
     "answerOptions": [
-      { "answertext": "(? :)", "isCorrect": true },
-      { "answertext": "( <= >=)", "isCorrect": false },
-      { "answertext": "(| &&)", "isCorrect": false },
-      { "answertext": "(=> ?)", "isCorrect": false }
-    ]
+      { "answertext": "(? :)" },
+      { "answertext": "( <= >=)"},
+      { "answertext": "(| &&)"},
+      { "answertext": "(=> ?)"}
+    ],
+    "isCorrect": "A"
   },
   {
     "QuestionText": "the assignment operator in javascript is?",
     "answerOptions": [
-      { "answertext": "==", "isCorrect": false },
-      { "answertext": "as", "isCorrect": false },
-      { "answertext": "=", "isCorrect": true },
-      { "answertext": "=>", "isCorrect": false }
-    ]
+      { "answertext": "=="},
+      { "answertext": "as"},
+      { "answertext": "=" },
+      { "answertext": "=>"}
+    ],
+    "isCorrect": "C"
   },
   {
     "QuestionText": "which of these is not a type of loop in javascript?",
     "answerOptions": [
-      { "answertext": "for loop", "isCorrect": false },
-      { "answertext": "for if loop", "isCorrect": true },
-      { "answertext": "do...While loop", "isCorrect": false },
-      { "answertext": "while loop", "isCorrect": false }
-    ]
+      { "answertext": "for loop"},
+      { "answertext": "for if loop"},
+      { "answertext": "do...While loop"},
+      { "answertext": "while loop"}
+    ],
+    "isCorrect": "B"
   },
   {
     "QuestionText": " conditional statements in javascript are used to decide the flow of execution based on different conditions?",
     "answerOptions": [
-      { "answertext": "False", "isCorrect": false },
-      { "answertext": "True and False" , "isCorrect": false },
-      { "answertext": "True", "isCorrect": true },
-      { "answertext": "None of the above", "isCorrect": false }
-    ]
+      { "answertext": "False"},
+      { "answertext": "True and False"},
+      { "answertext": "True"},
+      { "answertext": "None of the above"}
+    ],
+    "isCorrect": "C"
   },
   {
     "QuestionText": "what is the expected result of console.log(-true + 45)?",
     "answerOptions": [
-      { "answertext": "NaN", "isCorrect": false },
-      { "answertext": "44", "isCorrect": true },
-      { "answertext": "'true45'", "isCorrect": false },
-      { "answertext": "46", "isCorrect": false }
-    ]
+      { "answertext": "NaN"},
+      { "answertext": "44" },
+      { "answertext": "'true45'"},
+      { "answertext": "46"}
+    ],
+    "isCorrect": "B"
   },
   {
     "QuestionText": "The current context of execution,which determines the accessiblity of variables in javascript?",
     "answerOptions": [
-      { "answertext": "Area", "isCorrect": false },
-      { "answertext": "Range", "isCorrect": false },
-      { "answertext": "Block", "isCorrect": false },
-      { "answertext": "Scope", "isCorrect": true }
-    ]
+      { "answertext": "Area"},
+      { "answertext": "Range"},
+      { "answertext": "Block"},
+      { "answertext": "Scope"}
+    ],
+    "isCorrect": "D"
   },
   {
     "QuestionText": "Array in javascript are zero based, this means?",
     "answerOptions": [
-      { "answertext": "All javaScript arrays must begin with zero", "isCorrect": false },
-      { "answertext": "Every item in the array must be in base zero", "isCorrect": false },
-      { "answertext": "JavaScript start counting fom zero when it indexs an array", "isCorrect": true },
-      { "answertext": "None of the above", "isCorrect": false }
-    ]
+      { "answertext": "All javaScript arrays must begin with zero"},
+      { "answertext": "Every item in the array must be in base zero"},
+      { "answertext": "JavaScript start counting fom zero when it indexs an array" },
+      { "answertext": "None of the above" }
+    ],
+    "isCorrect": "C"
   },
   {
     "QuestionText": "console.log(+'')what is the expected output?",
     "answerOptions": [
-      { "answertext": "<empty string>", "isCorrect": false },
-      { "answertext": "0", "isCorrect": true},
-      { "answertext": "' '", "isCorrect": false },
-      { "answertext": "NaN", "isCorrect": false }
-    ]
+      { "answertext": "<empty string>"},
+      { "answertext": "0"},
+      { "answertext": "' '"},
+      { "answertext": "NaN"}
+    ],
+    "isCorrect": "B"
   },
   {
     "QuestionText": "which of these is a primitive datatype in javascript?",
     "answerOptions": [
-      { "answertext": "BigInts", "isCorrect": true },
-      { "answertext": "Object", "isCorrect": false },
-      { "answertext": "Array", "isCorrect": false },
-      { "answertext": "Method", "isCorrect": false }
-    ]
+      { "answertext": "BigInts" },
+      { "answertext": "Object"},
+      { "answertext": "Array"},
+      { "answertext": "Method"}
+    ],
+    "isCorrect": "A"
   },
   {
     "QuestionText": "let count = 1, let result = count++. what is the value of result?",
     "answerOptions": [
-      { "answertext": "2", "isCorrect": true },
-      { "answertext": "1", "isCorrect": false },
-      { "answertext": "undefined", "isCorrect": false },
-      { "answertext": "1.0", "isCorrect": false }
-    ]
+      { "answertext": "2"},
+      { "answertext": "1"},
+      { "answertext": "undefined"},
+      { "answertext": "1.0"}
+    ],
+    "isCorrect": "A"
   },
   {
     "QuestionText": "JavaScript is synchronous means that?",
     "answerOptions": [
-      { "answertext": "operations can run in parallel", "isCorrect": false },
-      { "answertext": "a specified number of operation can run at a time", "isCorrect": false },
-      { "answertext": "only one operation can be in progress at a time", "isCorrect": true },
-      { "answertext": "higher order functions takes priorty and runs before every other program", "isCorrect": false }
-    ]
+      { "answertext": "operations can run in parallel" },
+      { "answertext": "a specified number of operation can run at a time"},
+      { "answertext": "only one operation can be in progress at a time"},
+      { "answertext": "higher order functions takes priorty and runs before every other program"}
+    ],
+    "isCorrect": "C"
   }
 ]
