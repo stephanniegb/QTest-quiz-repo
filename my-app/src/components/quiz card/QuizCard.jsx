@@ -50,7 +50,8 @@ function QuizCard({ user }) {
 
   return (
     <div className="wrapper">
-      {showScore? <ShowScore user={user} total={QuestionsData.length} score={score}/>:<section className="quizcard">
+      {showScore? <ShowScore user={user} total={QuestionsData.length} score={score}/> :
+      <section className="quizcard">
         <div className="quizcard__qutDiv">
           <span className="quizcard__qutNum">
             Question {currentQt + 1}/
@@ -64,13 +65,16 @@ function QuizCard({ user }) {
         </div>
         {questions.map((ans) => {
           return (
-            <div className="quizcard__ansDiv">
-              <CustomButton index={0} option={'A'} param={ans}/>
-              <CustomButton index={1} option={'B'} param={ans}/>
-              <CustomButton index={2} option={'C'} param={ans}/>
-              <CustomButton index={3} option={'D'} param={ans}/>
-              <button onClick={()=>{handleNext(ans.isCorrect)}}>Next</button>
+            <div className="quizcard__ansContainer">
+              <div className="quizcard__ansDiv">
+               <CustomButton index={0} option={'A'} param={ans}/>
+               <CustomButton index={1} option={'B'} param={ans}/>
+               <CustomButton index={2} option={'C'} param={ans}/>
+               <CustomButton index={3} option={'D'} param={ans}/>
+             </div>
+              <button className="next-btn" onClick={()=>{handleNext(ans.isCorrect)}}>Next>></button>
             </div>
+            
           );
         })}
       </section>}

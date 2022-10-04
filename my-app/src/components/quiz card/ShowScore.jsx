@@ -8,10 +8,10 @@ function ShowScore({total, user, score}) {
     navigate('/')
   }
   return (
-    <div className="showScore">
-       <h2>{user}, you scored {score} out of {total} <br />
-        ({score / total * 100}%)
-        </h2> 
+    <div className="showScore"> 
+      <h2>Result:({score / total * 100}%) <br />
+      {user}, you scored {score} out of {total} 
+      </h2>
         <button className="resetBtn" onClick={handleReset}>Reset Quiz</button>
     </div>
   )

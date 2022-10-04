@@ -16,8 +16,6 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--off-white);
-    background-image: url(../public/learning-4264032_1920.jpg);
     color: #808181;
     font-family: var(--Rubik);
 }

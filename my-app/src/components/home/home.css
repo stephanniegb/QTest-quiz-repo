@@ -2,7 +2,6 @@
     font-family: var(--Courgette);
 }
 .home__container{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 8rem;
