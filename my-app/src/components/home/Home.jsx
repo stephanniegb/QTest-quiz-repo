@@ -9,10 +9,10 @@ import {
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const CustomDisplayIcon = ({ URL, icon, label }) => {
+const CustomDisplayIcon = ({ URL, icon, label, className}) => {
   //destructure props
   return (
-    <a href={URL} target="_blank" rel="noopener noreferrer" className="icon">
+    <a href={URL} target="_blank" rel="noopener noreferrer" className={className}>
       <FontAwesomeIcon icon={icon} className="brand__icon" />
       <p>{label}</p>
     </a>
@@ -55,14 +55,19 @@ function Home({ setUser }) {
           <CustomDisplayIcon
             URL={"https://www.linkedin.com/in/stephanie-egbuonu-809aa120a"}
             icon={faLinkedin}
+            className={"headerIcon"}
           />
           <CustomDisplayIcon
             URL={"https://twitter.com/Stephanniegb"}
             icon={faTwitter}
+            className={"headerIcon"}
+
           />
           <CustomDisplayIcon
             URL={"https://github.com/stephanniegb"}
             icon={faGithub}
+            className={"headerIcon"}
+
           />
         </div>
       </header>
@@ -102,21 +107,25 @@ function Home({ setUser }) {
             URL={"mailto:stephanieegbuonu@gmail.com"}
             icon={faEnvelope}
             label={"Mail"}
+            className={"icon"}
           />
           <CustomDisplayIcon
             URL={"https://github.com/stephanniegb"}
             icon={faGithub}
             label={"Github"}
+            className={"icon"}
           />
           <CustomDisplayIcon
             URL={"https://www.linkedin.com/in/stephanie-egbuonu-809aa120a"}
             icon={faLinkedin}
             label={"LinkedIn"}
+            className={"icon"}
           />
           <CustomDisplayIcon
             URL={"https://twitter.com/Stephanniegb"}
             icon={faTwitter}
             label={"Twitter"}
+            className={"icon"}
           />
         </div>
       </footer>

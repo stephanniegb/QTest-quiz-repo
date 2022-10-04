@@ -1,32 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&family=Rubik:wght@300&display=swap');
-:root{
-    --green: #4CA794;
-    --dark-green:#3E695F;
-    --light-green:#BAF5E8;
-    --off-white:#FFFCFF;
-    --very-light-green:#f4fcfa;
-    --Courgette:'Courgette', cursive;
-    --Rubik:'Rubik', sans-serif;
-    --Pacifico:'Pacifico', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&family=Rubik:wght@300&display=swap");
+:root {
+  --green: #4ca794;
+  --dark-green: #3e695f;
+  --green-gradient: linear-gradient(
+    90deg,
+    rgba(25, 28, 27, 1) 32%,
+    rgba(62, 105, 95, 1) 79%
+  );
+  --light-green: #baf5e8;
+  --off-white: #fffcff;
+  --very-light-green: #f4fcfa;
+  --Courgette: "Courgette", cursive;
+  --Rubik: "Rubik", sans-serif;
+  --Pacifico: "Pacifico", cursive;
 }
 
-
-
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #808181;
-    font-family: var(--Rubik);
+body {
+  background-image: url("../public/learning-4264032_1920.jpg");
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #808181;
+  font-family: var(--Rubik);
 }
-*, *::before,*::after{
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
-h1,h2,h3,h4,p{
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
 }
-input button{
-    font-family: var(--Rubik);
-
+input button {
+  font-family: var(--Rubik);
 }
